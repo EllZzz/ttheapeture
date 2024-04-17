@@ -1,0 +1,278 @@
+:root{
+    --bg-body: #ffff;
+    --primary-color:#0d0d0d;
+    --second-color:#031E51;
+    --font-title:"DM Serif Display", serif;
+    --font-body:"Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header 1. NavBar*/
+.navbar{
+    z-index:1000;
+    -moz-box-shadow: 0 0 5px #000000;
+	-webkit-box-shadow: 0 0 5px #000000;
+	box-shadow: 0 0 5px #000000;
+}
+.title-nav{
+    font-family: var(--font-title);
+    font-size: 30px;
+    color: #ffff;
+    transition: 0.4s;
+}
+
+.title-nav:hover{
+    color: #c0baba;
+    transition: 0.3s;
+}
+
+.nc1,.navbar-collapse{
+    flex-grow: 0;
+}
+
+nav.bg-apet{
+    background: var(--primary-color) !important;
+}
+
+nav.bg-apet ul li a{
+    color:#b9b9b9;
+    position:relative;
+    font-size: 20px;
+}
+
+nav.bg-apet ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-apet ul li a:hover{
+    color:#ffff;
+
+}
+
+nav.bg-apet ul li a:hover::after{
+    background:#ffff;
+    width: 40%;
+}
+
+/*Header 2. Thumbnail*/
+.imgthum{
+    width: 100%;
+    object-fit: cover;
+}
+
+div.banner-card{
+    position: relative;
+    z-index:-1000;
+}
+div.banner-card img{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 680px;
+    background-color: cornflowerblue;
+}
+
+div.banner-text{
+    font-family: var(--font-title);
+    position: absolute;
+    top: 87%;
+    left: 2%;
+    color: #ffff;
+    padding: 10px;
+}
+div.banner-text h4{
+    font-size: 3.0rem;
+}
+
+
+
+/*Main 1. Images*/
+
+
+.row .card{
+    margin: 100px 0px;
+    gap: 10px;
+    --bs-card-border-color:transparent !important;
+}
+div.mb-3{
+    flex-direction: row;
+}
+
+div.mb-3 p, .card-title{
+    text-align: center;
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+div.mb-3 p .card-text{
+    font-size: 1.2rem;
+}
+
+/*Main 2. Image-text*/
+
+
+div.artic{
+    flex-direction: row;
+}
+div.artic img{
+    height: 615px;
+    width: 500px;
+    object-fit: cover;
+}
+
+div.artic .card-text{
+    margin: 0px 0px;
+    padding: 0px 35px 0px 345px;
+    text-align: justify;
+}
+
+div.card-text p{
+    font-family: var(--font-body);
+    font-weight: 300;
+}
+
+/*Footer*/
+
+div.footer-bg{
+    position: absolute;
+    width: 100%;
+    background-color:var(--primary-color);
+
+}
+
+div.footer-info{
+    color: #fff;
+}
+
+div.footer-bg .container{
+    height: 100%;
+    display: flex;
+    font-family: var(--font-body);
+    font-weight: 300;
+}
+div.footer-bg .flex{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+
+div.footer-text{
+    margin-top: 93px;
+    margin-bottom: 93px;
+    padding-right: 60%;
+}
+
+div.footer-text, h4{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+div.footer-logo{
+    margin: 14px 0px;
+    display: -webkit-inline-box;
+}
+
+div.footer-logo h2{
+    font-size: 3rem;
+}
+
+div.footer-long-text{
+    padding-left: 275px;
+    padding-top: 299px;
+    margin: 21px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+div.footer-text a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+    /* Header */
+    .title-nav {
+        font-size: 24px;
+    }
+
+    /* Thumbnail */
+    div.banner-text {
+        top: 82%;
+    }
+
+    div.banner-text h4 {
+        font-size: 2.5rem;
+    }
+
+    /* Main */
+    .row .card {
+        margin: 50px 0px;
+    }
+
+    div.mb-3 p,
+    .card-title {
+        font-size: 1rem;
+    }
+
+    div.mb-3 p .card-text {
+        font-size: 1rem;
+    }
+
+    /* Image-text */
+    div.artic img {
+        height: auto;
+        width: 100%;
+    }
+
+    div.artic .card-text {
+        padding: 0px 10px;
+    }
+
+    /* Footer */
+    div.footer-bg .container {
+        flex-direction: column;
+    }
+
+    div.footer-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+    div.footer-long-text {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: justify;
+    }
+
+    div.footer-logo {
+        margin: 7px 0px;
+    }
+
+    div.footer-logo h2 {
+        font-size: 2.5rem;
+    }
+
+    div.footer-text,
+    h4 {
+        font-size: 11px;
+    }
+
+    div.footer-bg .flex {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+}
