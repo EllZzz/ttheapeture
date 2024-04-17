@@ -5,8 +5,9 @@
     --font-title:"DM Serif Display", serif;
     --font-body:"Poppins", sans-serif;
 }
-body{
-    overflow: hidden;
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Header 1. NavBar*/
@@ -182,4 +183,73 @@ div.footer-long-text{
 div.footer-text a{
     color: #ffff;
     text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .title-nav {
+        font-size: 24px;
+    }
+
+    /* Navbar */
+    .navbar-collapse {
+        flex-grow: 1; /* Allow the navbar items to wrap */
+    }
+
+    nav.bg-apet ul li a::after {
+        width: 0;
+    }
+
+    nav.bg-apet ul li a:hover::after {
+        width: 100%;
+    }
+
+    /* Main */
+    .row .card {
+        margin: 50px 0;
+    }
+
+    div.mb-3 p,
+    .card-title {
+        font-size: 1rem;
+    }
+
+    div.mb-3 p .card-text {
+        font-size: 1rem;
+    }
+
+    /* Image-text */
+    div.artic img {
+        height: auto;
+        width: 100%;
+    }
+
+    div.artic .card-text {
+        padding: 0 10px;
+    }
+
+    /* Footer */
+    div.footer-text {
+        margin: 30px 0;
+        padding-right: 20px;
+    }
+
+    div.footer-long-text {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    div.footer-logo h2 {
+        font-size: 2.5rem;
+    }
+
+    div.footer-text,
+    h4 {
+        font-size: 11px;
+    }
+
+    div.footer-bg .flex {
+        margin-top: 50px;
+    }
 }

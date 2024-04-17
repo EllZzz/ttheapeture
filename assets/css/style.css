@@ -200,5 +200,79 @@ div.footer-text a{
     text-decoration: none;
 }
 
-  
-  
+/*Responsive*/
+@media screen and (min-width: 768px) {
+    /* Header */
+    .title-nav {
+        font-size: 24px;
+    }
+
+    /* Thumbnail */
+    div.banner-text {
+        top: 82%;
+    }
+
+    div.banner-text h4 {
+        font-size: 2.5rem;
+    }
+
+    /* Main */
+    .row .card {
+        margin: 50px 0px;
+    }
+
+    div.mb-3 p,
+    .card-title {
+        font-size: 1rem;
+    }
+
+    div.mb-3 p .card-text {
+        font-size: 1rem;
+    }
+
+    /* Image-text */
+    div.artic img {
+        height: auto;
+        width: 100%;
+    }
+
+    div.artic .card-text {
+        padding: 0px 10px;
+    }
+
+    /* Footer */
+    div.footer-bg .container {
+        flex-direction: column;
+    }
+
+    div.footer-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+    div.footer-long-text {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: justify;
+    }
+
+    div.footer-logo {
+        margin: 7px 0px;
+    }
+
+    div.footer-logo h2 {
+        font-size: 2.5rem;
+    }
+
+    div.footer-text,
+    h4 {
+        font-size: 11px;
+    }
+
+    div.footer-bg .flex {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+}
